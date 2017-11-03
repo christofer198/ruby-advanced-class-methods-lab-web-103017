@@ -45,7 +45,11 @@ class Song
     else
       self.find_by_name(name_of_song)
     end
+    
+  end
 
+  def self.alphabetical
+    self.all.sort_by{|x| x.name}
   end
 
 end
