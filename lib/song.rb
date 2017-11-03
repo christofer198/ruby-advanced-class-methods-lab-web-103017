@@ -52,5 +52,12 @@ class Song
     self.all.sort_by{|x| x.name}
   end
 
+  def self.new_from_filename(song_name)
+    song = self.new
+    artist = song_name.split(/[^a-zA-Z\s]|\s-\s/)[0]
+    song = song_name.split(/[^a-zA-Z\s]|\s-\s/)[1]
+    song.name = song
+    song.artist_name = artist
+
 end
 #binding.pry
