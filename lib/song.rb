@@ -31,6 +31,7 @@ class Song
     song = self.new
     song.name = name_of_song
     song.save
+    song
   end
 
 end
