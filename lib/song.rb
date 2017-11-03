@@ -59,6 +59,7 @@ class Song
     song.name = song
     song.artist_name = artist
     song.save
+  end
 
 end
 #binding.pry
