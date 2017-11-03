@@ -58,6 +58,7 @@ class Song
     song = song_name.split(/[^a-zA-Z\s]|\s-\s/)[1]
     song.name = song
     song.artist_name = artist
+    song.save
 
 end
 #binding.pry
